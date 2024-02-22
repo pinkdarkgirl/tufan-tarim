@@ -1,0 +1,138 @@
+.home {
+  padding: 0 10%;
+  background-color: #eaefe5;
+}
+
+.home-container {
+  padding: 4em;
+}
+
+.intro-item {
+  margin: 10% 0;
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  align-items: center;
+  justify-items: end;
+}
+
+.intro-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  transition: transform 0.5s ease-in-out;
+  box-shadow: 0.7px 0.7px 1.2px hsl(var(--shadow-color) / 0.56),
+    4.5px 4.2px 7.3px -1px hsl(var(--shadow-color) / 0.63),
+    16.8px 15.9px 27.4px -2.1px hsl(var(--shadow-color) / 0.7);
+}
+
+.intro-img:hover {
+  transform: scale(103%);
+}
+
+.intro-text-title {
+  font-family: "Lora", serif;
+  margin: 0;
+  font-size: 2.25rem;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  --h: 1.2em;
+  line-height: var(--h);
+  color: #0000;
+  text-shadow: 0 calc(-1 * var(--_t, 0em)) var(--green-400),
+    0 calc(var(--h) - var(--_t, 0em)) var(--green-500);
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.intro-text-title:hover {
+  --_t: var(--h);
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.intro-text p {
+  font-weight: 500;
+  color: #1b3003;
+}
+
+.more-link {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  font-family: "Lora", serif;
+  text-transform: uppercase;
+  opacity: 0.6;
+  color: #1b3003;
+  transition: opacity 0.2s ease-in-out, transform 0.4s ease-in;
+}
+
+.more-link:hover {
+  transform: translateX(5%);
+  opacity: 1;
+}
+
+@media screen and (max-width: 750px) {
+  .home {
+    padding: 0 10%;
+  }
+
+  .home-container {
+    padding: 3em 0;
+  }
+
+  .intro-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30%;
+    text-align: center;
+    line-height: 1.5;
+    gap: 1em;
+  }
+
+  .intro-text-title {
+    font-size: 1.75rem;
+  }
+
+  .intro-img {
+    width: 100%;
+  }
+
+  .more-link {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .home {
+    padding: 0 10%;
+  }
+
+  .home-container {
+    padding: 3em 0;
+  }
+
+  .intro-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30%;
+    text-align: center;
+    line-height: 1.5;
+    gap: 1em;
+  }
+
+  .intro-text-title {
+    font-size: 1.75rem;
+  }
+
+  .intro-img {
+    width: 100%;
+  }
+
+  .more-link {
+    display: none;
+  }
+}

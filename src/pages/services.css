@@ -1,0 +1,117 @@
+/*typo*/
+
+.services {
+  padding: 3em;
+}
+
+.services-container {
+  width: 70%;
+  margin: 3em auto;
+}
+
+.services-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5%;
+  background-color: #f0f7e9;
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 3em;
+  box-shadow: 3.5px 7px 7px hsl(0deg 0% 0% / 0.39);
+}
+
+.services-item.left {
+  flex-direction: row-reverse;
+}
+
+.services-item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 45%;
+  gap: 0.75em;
+}
+
+.services-item-title {
+  font-family: "Lora", serif;
+  color: var(--green-400);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin: 0;
+  width: fit-content;
+}
+
+.services-item-title::after {
+  content: "";
+  display: block;
+  width: 20%;
+  border-radius: 2px;
+  height: 2px;
+  margin: 3px 0 0;
+  background: var(--green-500);
+  transition: width 0.6s ease-in-out;
+}
+
+.services-item-title:hover::after {
+  width: 60%;
+}
+
+.services-item-text p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.services-img-container {
+  width: 45%;
+}
+
+.services-item-img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 730px) {
+  .services {
+    padding: 0;
+    padding-bottom: 3em;
+  }
+
+  .services-container {
+    width: 80%;
+  }
+
+  .services-item.left,
+  .services-item {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10% 5%;
+    background-color: #f0f7e9;
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 3em;
+    box-shadow: 3.5px 7px 7px hsl(0deg 0% 0% / 0.39);
+  }
+
+  .services-item-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
+    gap: 0.75em;
+  }
+
+  .services-item-text button {
+    align-self: flex-start;
+  }
+
+  .services-img-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em 0;
+  }
+}

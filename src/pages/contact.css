@@ -1,0 +1,87 @@
+.contact-container {
+  display: flex;
+  align-items: center;
+  padding: 4em;
+  gap: 5em;
+}
+
+.contact-text {
+  width: 45%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 3em;
+}
+
+.contact-item.location {
+  grid-column: span 2;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-item img {
+  width: 3em;
+}
+
+.contact-item h2 {
+  color: var(--green-500);
+}
+.contact-item p {
+  margin: 0.25em;
+  letter-spacing: 0.2px;
+}
+
+.contact-item p span {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: var(--green-500);
+}
+
+#map {
+  width: 45%;
+  z-index: 0;
+  border-radius: 5px;
+  box-shadow: 3.5px 7px 7px hsl(0deg 0% 0% / 0.39);
+}
+
+.leaflet-control-attribution svg {
+  width: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .contact-text {
+    width: 45%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+
+  .contact-item {
+    padding-bottom: 10%;
+  }
+
+  #map {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .contact-container {
+    flex-direction: column-reverse;
+    padding: 2em 2em 4em;
+    gap: 3em;
+  }
+
+  .contact-text {
+    width: 80%;
+  }
+
+  #map {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
