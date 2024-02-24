@@ -37,12 +37,15 @@ function ProductsHome() {
       <div>
         <Splide
           options={{
-            perPage: 3,
+            perPage: 4,
             rewind: true,
             gap: "3em",
             perMove: 1,
             breakpoints: {
               1150: {
+                perPage: 3,
+              },
+              770: {
                 perPage: 2,
               },
             },

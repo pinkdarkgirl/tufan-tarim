@@ -84,10 +84,6 @@ video {
 
 /* header */
 
-.navbar-bg {
-  visibility: visible;
-}
-
 .nav-link {
   padding-left: 2em;
   font-weight: 400;
@@ -169,8 +165,8 @@ video {
 
 .hero-text-title {
   max-width: 100%;
-  height: auto;
-  padding: 2em 4em 3em 1em;
+  height: 200px;
+  padding: 2em;
 }
 
 /* general */
@@ -246,7 +242,7 @@ main {
 }
 
 .header.header-bg {
-  background: #f0f7e9;
+  background: #f4f7f0;
   display: flex;
   justify-content: space-between;
 }
@@ -335,7 +331,7 @@ main {
 .hero {
   position: relative;
   overflow: hidden;
-  height: 30em;
+  height: 25em;
 }
 
 .hero-text-container {

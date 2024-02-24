@@ -7,16 +7,19 @@
 }
 
 .slide-image-container {
-  height: 70%;
+  height: 50%;
+  width: 100%;
 }
 
 .splide__slide {
   display: flex;
   border-radius: 8px;
+  justify-content: center;
   margin: 4em auto;
   flex-direction: column;
   overflow: hidden;
-  height: 20em;
+  height: 18em;
+  width: 100%;
   align-items: center;
   background: rgba(166, 228, 103, 0.1);
   box-shadow: 3.5px 3px 3px hsl(0deg 0% 0% / 0.39);
@@ -35,7 +38,7 @@
 }
 
 .intro-text-title.home {
-  margin-top: 2em;
+  margin-top: 1em;
   text-align: center;
 }
 

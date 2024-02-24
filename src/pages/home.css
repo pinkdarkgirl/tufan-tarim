@@ -1,10 +1,14 @@
 .home {
-  padding: 0 10%;
+  padding: 0 5%;
+}
+
+.home-body {
+  padding-top: 2em;
   background-color: #eaefe5;
 }
 
 .home-container {
-  padding: 4em;
+  padding: 6em;
 }
 
 .intro-item {
