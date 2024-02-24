@@ -21,7 +21,7 @@ export const PRODUCTS = {
     name: "NEEMARİN",
     type: "İnsektisit",
     madde: "%5 Emamectin benzoate",
-    img: new URL("./assets/ilac/neemarin.png", import.meta.url).href,
+    img: new URL("./assets/ilac/neemarin.jpeg", import.meta.url).href,
   },
   gredi: {
     name: "GREDI",

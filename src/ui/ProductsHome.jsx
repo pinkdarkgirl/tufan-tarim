@@ -54,6 +54,7 @@ function ProductsHome() {
                 <img src={product.img} className="slide-image" />
               </div>
               <h4 className="home-product-title">{product.name}</h4>
+              <p className="home-product-text">{product.type}</p>
             </SplideSlide>
           ))}
           <div className="splide__progress">

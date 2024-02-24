@@ -271,6 +271,7 @@ main {
 }
 
 .nav-sm .nav-link:hover {
+  text-decoration: underline;
   transform: scale(102%);
   color: var(--green-400);
 }
