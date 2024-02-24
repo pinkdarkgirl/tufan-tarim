@@ -8,11 +8,18 @@ import whiteLogo from "../assets/logowhite.png";
 // rrd import
 import { Link, NavLink } from "react-router-dom";
 
+// library import
+import { useMediaQuery } from "react-responsive";
+
 function Header() {
   const [bgColor, setBgColor] = useState(false);
   const [logo, setLogo] = useState(whiteLogo);
 
   const [isDropdown, setIsDropdown] = useState(false);
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const isMobile = useMediaQuery({ maxWidth: "850px" });
 
   // change nav color on scroll
   const changeHeader = () => {
@@ -32,33 +39,49 @@ function Header() {
     };
   }, []);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    console.log(isMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    if (isMobile) {
+      setIsMenuOpen(false);
+    }
+  };
+
   const handleMouseEnter = () => setIsDropdown(true);
   const handleMouseLeave = () => setIsDropdown(false);
 
-  return (
-    <div className={bgColor ? "header header-bg" : "header"}>
-      <Link to="/" className="logo">
-        <img src={logo} alt="logo" />
-      </Link>
-      <nav className="navbar-bg">
-        <NavLink className="nav-link" to="/">
+  const renderNavLinks = () => {
+    return (
+      <nav className={!isMobile ? "nav" : "nav-sm"}>
+        <NavLink className="nav-link" to="/" onClick={closeMobileMenu}>
           Anasayfa
         </NavLink>
-        <NavLink className="nav-link" to="/hakkimizda">
+        <NavLink
+          className="nav-link"
+          to="/hakkimizda"
+          onClick={closeMobileMenu}
+        >
           Hakkımızda
         </NavLink>
-        <NavLink className="nav-link" to="/hizmetler">
+        <NavLink className="nav-link" to="/hizmetler" onClick={closeMobileMenu}>
           Hizmetler
         </NavLink>
         <div
-          className="dropdown-container"
+          className={isMobile ? "" : "dropdown-container"}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <NavLink className="nav-link drop" to="/urunler">
+          <NavLink
+            className={isMobile ? "nav-link" : "nav-link drop"}
+            to="/urunler"
+            onClick={closeMobileMenu}
+          >
             Ürünler
           </NavLink>
-          {isDropdown && (
+          {!isMobile && isDropdown && (
             <ul>
               <li>
                 <Link className="dropdown-link" to="/urunler/ilac">
@@ -83,10 +106,32 @@ function Header() {
             </ul>
           )}
         </div>
-        <NavLink className="nav-link" to="/iletisim">
+        <NavLink className="nav-link" to="/iletisim" onClick={closeMobileMenu}>
           İletişim
         </NavLink>
       </nav>
+    );
+  };
+
+  return (
+    <div className={bgColor ? "header header-bg" : "header"}>
+      <Link to="/" className="logo">
+        <img src={logo} alt="logo" />
+      </Link>
+
+      {isMobile ? (
+        <div className={`nav-menu ${isMenuOpen ? "show-menu" : ""}`}>
+          {isMenuOpen && renderNavLinks()}
+        </div>
+      ) : (
+        renderNavLinks()
+      )}
+
+      {isMobile && (
+        <button className="nav-toggle" onClick={toggleMenu}>
+          MENÜ
+        </button>
+      )}
     </div>
   );
 }

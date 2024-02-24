@@ -1,4 +1,4 @@
-import video from "../assets/video.webm";
+import video from "../assets/video.mp4";
 import logoText from "../assets/logotext.png";
 
 function Hero() {
@@ -9,7 +9,6 @@ function Hero() {
         <source src="../assets/video.webm" type="video/webm" />
       </video>
       <div className="hero-text-container">
-        {/* <p>Tarımda Güvendiğiniz İsim</p> */}
         <img src={logoText} className="hero-text-title" />
       </div>
     </div>

@@ -1,6 +1,3 @@
-// library import
-// import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-
 // img import
 import blackLogo from "../assets/logoblack.png";
 

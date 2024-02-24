@@ -75,7 +75,7 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   .home {
     padding: 0 10%;
   }
@@ -87,7 +87,7 @@
   .intro-item {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30%;
+    margin-bottom: 20%;
     text-align: center;
     line-height: 1.5;
     gap: 1em;

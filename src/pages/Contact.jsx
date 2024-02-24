@@ -6,6 +6,9 @@ import email from "../assets/icons/email.svg";
 import location from "../assets/icons/location.svg";
 import phone from "../assets/icons/phone.svg";
 
+//img import
+import mapdukkan from "../assets/mapdukkan.jpeg";
+
 // library import
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 
@@ -21,21 +24,23 @@ function Contact() {
           </p>
         </div>
         <div className="contact-container">
-          <MapContainer
-            id="map"
-            center={[40.433351, 29.720357]}
-            zoom={20}
-            scrollWheelZoom={true}
-            style={{ height: "300px" }}
-          >
-            <TileLayer
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
-            <Marker position={[40.433351, 29.720357]}>
-              <Popup>Buradayız!</Popup>
-            </Marker>
-          </MapContainer>
+          <div className="map-container">
+            <MapContainer
+              id="map"
+              center={[40.433351, 29.720357]}
+              zoom={20}
+              scrollWheelZoom={true}
+            >
+              <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+              <Marker position={[40.433351, 29.720357]}>
+                <Popup>Buradayız!</Popup>
+              </Marker>
+            </MapContainer>
+            <img src={mapdukkan} alt="dukkan" />
+          </div>
           <div className="contact-text">
             <div className="contact-item location">
               <img src={location} alt="location icon" />
