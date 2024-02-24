@@ -219,6 +219,7 @@ video {
   background-color: var(--green-500);
   color: var(--green-100);
   margin: 0;
+  font-size: 0.9rem;
   padding: 0.5em;
 }
 
@@ -344,8 +345,6 @@ main {
   color: var(--green-100);
 }
 
-/* slider */
-
 /* general */
 
 .page-container {
@@ -390,20 +389,21 @@ footer {
   grid-template-columns: repeat(2, minmax(200px, 1fr));
   justify-items: center;
   gap: 3%;
+  align-items: end;
 }
 
 .footer-items {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2em;
+  gap: 1em;
   padding: 2em;
   padding-right: 0;
   place-self: center;
 }
 
 .footer-logo {
-  width: 80%;
+  width: 70%;
   max-width: 400px;
   margin: 0 auto;
 }
