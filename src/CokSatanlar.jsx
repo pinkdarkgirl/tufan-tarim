@@ -1,0 +1,123 @@
+export const PRODUCTS = {
+  admiral: {
+    name: "ADMIRAL 10 EC",
+    type: "İnsektisit",
+    madde: "100 g/L Pyriproxyfen",
+    img: new URL("./assets/ilac/admiral.jpg", import.meta.url).href,
+  },
+  altacor: {
+    name: "Altacor® 35 WG",
+    type: "İnsektisit",
+    madde: "35 % Chlorantraniliprole",
+    img: new URL("./assets/ilac/altacor.webp", import.meta.url).href,
+  },
+  uphold: {
+    name: "UPHOLD® 360 SC",
+    type: "İnsektisit",
+    madde: "300 g/l Methoxyfenozide + 60g/l Spinetoram",
+    img: new URL("./assets/ilac/uphold.jpeg", import.meta.url).href,
+  },
+  neemarin: {
+    name: "NEEMARİN",
+    type: "İnsektisit",
+    madde: "%5 Emamectin benzoate",
+    img: new URL("./assets/ilac/neemarin.png", import.meta.url).href,
+  },
+  gredi: {
+    name: "GREDI",
+    type: "İnsektisit",
+    madde: "50% Flonicamide",
+    img: new URL("./assets/ilac/gredi.png", import.meta.url).href,
+  },
+  deltharin: {
+    name: "DELTHARIN 2.5 EC",
+    type: "İnsektisit",
+    madde: "25 gr/lt Deltamethrin",
+    img: new URL("./assets/ilac/deltharin.jpeg", import.meta.url).href,
+  },
+  knockOut: {
+    name: "KNOCK-OUT",
+    type: "Herbisit",
+    madde: "480 g/l Glyphosate Isopropylamin Tuzu",
+    img: new URL("./assets/ilac/knock-out.webp", import.meta.url).href,
+  },
+
+  signum: {
+    name: "ZiRAM® 76 DF",
+    type: "Fungusit",
+    madde: "%76 Ziram",
+    img: new URL("./assets/ilac/ziram.png", import.meta.url).href,
+  },
+  regev: {
+    name: "REGEV",
+    type: "Fungusit",
+    madde: "400 g/l Tea tree oil + 200 g/l Difenoconazole",
+    img: new URL("./assets/ilac/regev.jpeg", import.meta.url).href,
+  },
+  ritreap: {
+    name: "RITREAP EW",
+    type: "Fungusit",
+    madde: "51,3 gr/l Cyflufenamid",
+    img: new URL("./assets/ilac/ritreap.webp", import.meta.url).href,
+  },
+  bellis: {
+    name: "Bellis",
+    type: "Fungusit",
+    madde: "25 % Boscalid, 12 % Pyraclostrobin",
+    img: new URL("./assets/ilac/bellis.jpeg", import.meta.url).href,
+  },
+  lusen: {
+    name: "LUSEN SC 500",
+    type: "Fungisit",
+    madde: "250 g/l Fluopyram+ 250 g/l Trifloxystrobin",
+    img: new URL("./assets/ilac/lusen.png", import.meta.url).href,
+  },
+  collis: {
+    name: "Collis® SC",
+    type: "Fungisit",
+    madde: "100 g/L Kresoxim-methyl, 200 g/L Boscalid",
+    img: new URL("./assets/ilac/collis.png", import.meta.url).href,
+  },
+  durduran: {
+    name: "DURDURAN 3C",
+    type: "Bitki Gelişim Düzenleyicisi (BGD)",
+    madde: "460 g/L Chlormequat chloride",
+    img: new URL("./assets/ilac/durduran.jpeg", import.meta.url).href,
+  },
+  sequestrene: {
+    name: "Sequestrene Fe",
+    type: "Gübre",
+    madde: "%6 Metalik Demir (EDDHA Fe)",
+    img: new URL("./assets/ilac/seq.webp", import.meta.url).href,
+  },
+  vitaseve: {
+    name: "VITASEVE",
+    type: "Gübre",
+    madde: "Magnezyum Sülfat Çözeltisi",
+    img: new URL("./assets/ilac/vitaseve.png", import.meta.url).href,
+  },
+  sinergon: {
+    name: "SINERGON 2000",
+    type: "Gübre",
+    madde: "",
+    img: new URL("./assets/ilac/sinergon-2000.png", import.meta.url).href,
+  },
+  sulfacid: {
+    name: "KSG SULFACID",
+    type: "Gübre",
+    madde: "",
+    img: new URL("./assets/ilac/ksc.jpeg", import.meta.url).href,
+  },
+  nipo: {
+    name: "NIPOCALCIO",
+    type: "Gübre",
+    madde: "",
+    img: new URL("./assets/ilac/nipo.jpeg", import.meta.url).href,
+  },
+  peters: {
+    name: "Peters Professional",
+    type: "Gübre",
+    madde: "",
+    img: new URL("./assets/ilac/peter.png", import.meta.url).href,
+  },
+};
