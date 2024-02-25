@@ -9,6 +9,7 @@ import "./ProductsHome.css";
 
 function ProductsHome() {
   const productsData = [
+    PRODUCTS.nipo,
     PRODUCTS.admiral,
     PRODUCTS.altacor,
     PRODUCTS.uphold,
@@ -28,7 +29,6 @@ function ProductsHome() {
     PRODUCTS.neemarin,
     PRODUCTS.sulfacid,
     PRODUCTS.peters,
-    PRODUCTS.nipo,
   ];
 
   return (
