@@ -1,69 +1,69 @@
 // library import
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/splide/css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 // data import
 import { PRODUCTS } from "../CokSatanlar.jsx";
 
 import "./ProductsHome.css";
 
+const responsive = {
+  desktop: {
+    breakpoint: { max: 4000, min: 1024 },
+    items: 4,
+  },
+  desktopsm: {
+    breakpoint: { max: 1024, min: 800 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 800, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
+
 function ProductsHome() {
   const productsData = [
-    PRODUCTS.nipo,
-    PRODUCTS.admiral,
-    PRODUCTS.altacor,
-    PRODUCTS.uphold,
-    PRODUCTS.gredi,
-    PRODUCTS.deltharin,
-    PRODUCTS.knockOut,
-    PRODUCTS.signum,
-    PRODUCTS.regev,
-    PRODUCTS.ritreap,
-    PRODUCTS.bellis,
-    PRODUCTS.lusen,
-    PRODUCTS.collis,
-    PRODUCTS.durduran,
-    PRODUCTS.sequestrene,
+    PRODUCTS.nipocalcio,
     PRODUCTS.vitaseve,
-    PRODUCTS.sinergon,
-    PRODUCTS.neemarin,
-    PRODUCTS.sulfacid,
+    PRODUCTS.master,
+    PRODUCTS.polyfeed,
     PRODUCTS.peters,
+    PRODUCTS.blackjack,
+    PRODUCTS.folex,
+    PRODUCTS.acticomfors,
+    PRODUCTS.actiwave,
+    PRODUCTS.mcextra,
+    PRODUCTS.viva,
   ];
 
   return (
-    <div className="carousel-container">
+    <div>
       <h2 className="intro-text-title home">ÇOK SATANLAR</h2>
       <div>
-        <Splide
-          options={{
-            perPage: 4,
-            rewind: true,
-            gap: "3em",
-            perMove: 1,
-            breakpoints: {
-              1150: {
-                perPage: 3,
-              },
-              770: {
-                perPage: 2,
-              },
-            },
-          }}
+        <Carousel
+          responsive={responsive}
+          containerClass="carousel-container"
+          infinite
+          autoPlay
+          autoPlaySpeed={3000}
         >
-          {productsData.map((product) => (
-            <SplideSlide key={product.name}>
-              <div className="slide-image-container">
-                <img src={product.img} className="slide-image" />
+          {productsData.map((product, index) => (
+            <div key={index} className="product-carousel-item">
+              <div className="carousel-image-container">
+                <img src={product.img} className="carousel-image" />
               </div>
-              <h4 className="home-product-title">{product.name}</h4>
-              <p className="home-product-text">{product.type}</p>
-            </SplideSlide>
+              <div className="carousel-text-container">
+                <h4>{product.name}</h4>
+                <p>{product.label}</p>
+              </div>
+            </div>
           ))}
-          <div className="splide__progress">
-            <div className="splide__progress__bar" />
-          </div>
-        </Splide>
+        </Carousel>
       </div>
     </div>
   );
