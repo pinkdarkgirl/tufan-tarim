@@ -233,7 +233,7 @@ main {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 200;
   background: transparent;
   transition: 0.3s ease-in;
   display: flex;
