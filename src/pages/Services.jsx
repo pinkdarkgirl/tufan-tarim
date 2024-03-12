@@ -6,8 +6,8 @@ import { useNavigate } from "react-router-dom";
 
 const fideUrl =
   "https://nftstorage.link/ipfs/bafybeifbzll34k6fqfoza7irrpfgawoh3sfmus3igjmqfknwgtz2rqolna/fide.jpg";
-const gübreUrl =
-  "https://nftstorage.link/ipfs/bafybeifbzll34k6fqfoza7irrpfgawoh3sfmus3igjmqfknwgtz2rqolna/gübre.jpg";
+const gubreUrl =
+  "https://nftstorage.link/ipfs/bafybeifbzll34k6fqfoza7irrpfgawoh3sfmus3igjmqfknwgtz2rqolna/gubre.jpg";
 const sulamaUrl =
   "https://nftstorage.link/ipfs/bafybeifbzll34k6fqfoza7irrpfgawoh3sfmus3igjmqfknwgtz2rqolna/sulama.jpg";
 const ziraiUrl =
@@ -76,7 +76,7 @@ function Services() {
               </button>
             </div>
             <div className="services-img-container">
-              <img src={gübreUrl} className="services-item-img" />
+              <img src={gubreUrl} className="services-item-img" />
             </div>
           </div>
           <div className="services-item">
