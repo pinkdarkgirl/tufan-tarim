@@ -5,13 +5,15 @@ import { Link } from "react-router-dom";
 import Hero from "../ui/Hero";
 import ProductsHome from "../ui/ProductsHome";
 
-// image imports
-import home1 from "../assets/home1.jpg";
-import home2 from "../assets/home2.jpg";
-import dukkan from "../assets/dukkan.jpeg";
-
 // css import
 import "./home.css";
+
+const home1Url =
+  "https://nftstorage.link/ipfs/bafybeifbzll34k6fqfoza7irrpfgawoh3sfmus3igjmqfknwgtz2rqolna/home1.jpg";
+const home2Url =
+  "https://nftstorage.link/ipfs/bafybeifbzll34k6fqfoza7irrpfgawoh3sfmus3igjmqfknwgtz2rqolna/home2.jpg";
+const dukkanUrl =
+  "https://nftstorage.link/ipfs/bafybeifbzll34k6fqfoza7irrpfgawoh3sfmus3igjmqfknwgtz2rqolna/dukkan.jpeg";
 
 function Home() {
   return (
@@ -35,7 +37,7 @@ function Home() {
                   Daha Fazla &gt;
                 </Link>
               </div>
-              <img src={home2} className="intro-img" />
+              <img src={home2Url} className="intro-img" />
             </div>
             <div className="intro-item">
               <div className="intro-text">
@@ -51,7 +53,7 @@ function Home() {
                   Daha Fazla &gt;
                 </Link>
               </div>
-              <img src={home1} className="intro-img" />
+              <img src={home1Url} className="intro-img" />
             </div>
 
             <div className="intro-item">
@@ -69,7 +71,7 @@ function Home() {
                   Daha Fazla &gt;
                 </Link>
               </div>
-              <img src={dukkan} className="intro-img" />
+              <img src={dukkanUrl} className="intro-img" />
             </div>
           </div>
         </div>

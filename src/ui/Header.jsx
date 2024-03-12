@@ -1,15 +1,16 @@
 // react import
 import { useEffect, useState } from "react";
 
-// img import
-import blackLogo from "../assets/logoblack.png";
-import whiteLogo from "../assets/logowhite.png";
-
 // rrd import
 import { Link, NavLink } from "react-router-dom";
 
 // library import
 import { useMediaQuery } from "react-responsive";
+
+const blackLogo =
+  "https://nftstorage.link/ipfs/bafybeifbzll34k6fqfoza7irrpfgawoh3sfmus3igjmqfknwgtz2rqolna/logoblack.png";
+const whiteLogo =
+  "https://nftstorage.link/ipfs/bafybeifbzll34k6fqfoza7irrpfgawoh3sfmus3igjmqfknwgtz2rqolna/logowhite.png";
 
 function Header() {
   const [bgColor, setBgColor] = useState(false);

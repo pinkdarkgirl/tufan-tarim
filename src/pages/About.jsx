@@ -1,10 +1,12 @@
 // css import
 import "./about.css";
 
-// image imports
-import dukkan1 from "../assets/dukkan1.jpeg";
-import dukkan2 from "../assets/dukkan2.jpeg";
-import dukkan3 from "../assets/dukkan3.jpeg";
+const dukkan1Url =
+  "https://nftstorage.link/ipfs/bafybeifbzll34k6fqfoza7irrpfgawoh3sfmus3igjmqfknwgtz2rqolna/dukkan1.jpeg";
+const dukkan2Url =
+  "https://nftstorage.link/ipfs/bafybeifbzll34k6fqfoza7irrpfgawoh3sfmus3igjmqfknwgtz2rqolna/dukkan2.jpeg";
+const dukkan3Url =
+  "https://nftstorage.link/ipfs/bafybeifbzll34k6fqfoza7irrpfgawoh3sfmus3igjmqfknwgtz2rqolna/dukkan3.jpeg";
 
 function About() {
   return (
@@ -46,9 +48,9 @@ function About() {
             </p>
           </div>
           <div className="about-img-container">
-            <img src={dukkan1} alt="dukkan" />
-            <img src={dukkan2} alt="dukkan" />
-            <img src={dukkan3} alt="dukkan" />
+            <img src={dukkan1Url} alt="dukkan" />
+            <img src={dukkan2Url} alt="dukkan" />
+            <img src={dukkan3Url} alt="dukkan" />
           </div>
         </div>
       </div>

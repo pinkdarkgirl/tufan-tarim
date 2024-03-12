@@ -1,16 +1,21 @@
 // css import
 import "./contact.css";
 
-// icon import
-import email from "../assets/icons/email.svg";
-import location from "../assets/icons/location.svg";
-import phone from "../assets/icons/phone.svg";
-
-//img import
-import mapdukkan from "../assets/mapdukkan.jpeg";
+// //img import
+// import mapdukkan from "../assets/mapdukkan.jpeg";
 
 // library import
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
+
+const contactImgUrl =
+  "https://nftstorage.link/ipfs/bafybeifbzll34k6fqfoza7irrpfgawoh3sfmus3igjmqfknwgtz2rqolna/mapdukkan.jpeg";
+
+const emailIconUrl =
+  "https://nftstorage.link/ipfs/bafybeifbzll34k6fqfoza7irrpfgawoh3sfmus3igjmqfknwgtz2rqolna/email.svg";
+const locationIconUrl =
+  "https://nftstorage.link/ipfs/bafybeifbzll34k6fqfoza7irrpfgawoh3sfmus3igjmqfknwgtz2rqolna/location.svg";
+const phoneIconUrl =
+  "https://nftstorage.link/ipfs/bafybeifbzll34k6fqfoza7irrpfgawoh3sfmus3igjmqfknwgtz2rqolna/phone.svg";
 
 function Contact() {
   return (
@@ -39,11 +44,11 @@ function Contact() {
                 <Popup>Buradayız!</Popup>
               </Marker>
             </MapContainer>
-            <img src={mapdukkan} alt="dukkan" />
+            <img src={contactImgUrl} alt="dukkan" />
           </div>
           <div className="contact-text">
             <div className="contact-item location">
-              <img src={location} alt="location icon" />
+              <img src={locationIconUrl} alt="location icon" />
               <h2>ADRES</h2>
               <p>
                 Beyler Mahallesi Atatürk Caddesi No:118 İznik / Bursa{" "}
@@ -55,13 +60,13 @@ function Contact() {
               </p>
             </div>
             <div className="contact-item">
-              <img src={phone} alt="phone icon" />
+              <img src={phoneIconUrl} alt="phone icon" />
               <h2>TELEFON</h2>
               <p>0533 491 9422</p>
               <p>0532 610 7343</p>
             </div>
             <div className="contact-item ">
-              <img src={email} alt="email icon" />
+              <img src={emailIconUrl} alt="email icon" />
               <h2>E-MAIL</h2>
               <p>tufantarim16@gmail.com</p>
             </div>

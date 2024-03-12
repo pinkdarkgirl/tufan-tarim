@@ -1,5 +1,8 @@
 // img import
-import blackLogo from "../assets/logoblack.png";
+// import blackLogo from "../assets/logoblack.png";
+
+const blackLogo =
+  "https://nftstorage.link/ipfs/bafybeifbzll34k6fqfoza7irrpfgawoh3sfmus3igjmqfknwgtz2rqolna/logoblack.png";
 
 function Footer() {
   return (

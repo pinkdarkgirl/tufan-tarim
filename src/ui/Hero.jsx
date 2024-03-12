@@ -1,5 +1,7 @@
 import video from "../assets/video.mp4";
-import logoText from "../assets/logotext.png";
+
+const logoTextUrl =
+  "https://nftstorage.link/ipfs/bafybeifbzll34k6fqfoza7irrpfgawoh3sfmus3igjmqfknwgtz2rqolna/logotext.png";
 
 function Hero() {
   return (
@@ -9,7 +11,7 @@ function Hero() {
         <source src="../assets/video.webm" type="video/webm" />
       </video>
       <div className="hero-text-container">
-        <img src={logoText} className="hero-text-title" />
+        <img src={logoTextUrl} className="hero-text-title" />
       </div>
     </div>
   );

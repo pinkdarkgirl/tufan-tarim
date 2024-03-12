@@ -1,15 +1,19 @@
-// image imports
-import fide from "../assets/fide.jpg";
-import gübre from "../assets/gubre.jpg";
-import sulama from "../assets/sulama.jpg";
-import zirai from "../assets/zirai.jpg";
-import zeytin from "../assets/zeytin.jpg";
-
 // css import
 import "./services.css";
 
 // rrd import
 import { useNavigate } from "react-router-dom";
+
+const fideUrl =
+  "https://nftstorage.link/ipfs/bafybeifbzll34k6fqfoza7irrpfgawoh3sfmus3igjmqfknwgtz2rqolna/fide.jpg";
+const gübreUrl =
+  "https://nftstorage.link/ipfs/bafybeifbzll34k6fqfoza7irrpfgawoh3sfmus3igjmqfknwgtz2rqolna/gübre.jpg";
+const sulamaUrl =
+  "https://nftstorage.link/ipfs/bafybeifbzll34k6fqfoza7irrpfgawoh3sfmus3igjmqfknwgtz2rqolna/sulama.jpg";
+const ziraiUrl =
+  "https://nftstorage.link/ipfs/bafybeifbzll34k6fqfoza7irrpfgawoh3sfmus3igjmqfknwgtz2rqolna/zirai.jpg";
+const zeytinUrl =
+  "https://nftstorage.link/ipfs/bafybeifbzll34k6fqfoza7irrpfgawoh3sfmus3igjmqfknwgtz2rqolna/zeytin.jpg";
 
 function Services() {
   const navigate = useNavigate();
@@ -49,7 +53,7 @@ function Services() {
               </button>
             </div>
             <div className="services-img-container">
-              <img src={zirai} className="services-item-img" />
+              <img src={ziraiUrl} className="services-item-img" />
             </div>
           </div>
           <div className="services-item left">
@@ -72,7 +76,7 @@ function Services() {
               </button>
             </div>
             <div className="services-img-container">
-              <img src={gübre} className="services-item-img" />
+              <img src={gübreUrl} className="services-item-img" />
             </div>
           </div>
           <div className="services-item">
@@ -91,7 +95,7 @@ function Services() {
               </button>
             </div>
             <div className="services-img-container">
-              <img src={sulama} className="services-item-img" />
+              <img src={sulamaUrl} className="services-item-img" />
             </div>
           </div>
           <div className="services-item left">
@@ -111,7 +115,7 @@ function Services() {
               </button>
             </div>{" "}
             <div className="services-img-container">
-              <img src={fide} className="services-item-img" />
+              <img src={fideUrl} className="services-item-img" />
             </div>
           </div>
           <div className="services-item">
@@ -131,7 +135,7 @@ function Services() {
               </button>
             </div>
             <div className="services-img-container">
-              <img src={zeytin} className="services-item-img" />
+              <img src={zeytinUrl} className="services-item-img" />
             </div>
           </div>
         </div>
